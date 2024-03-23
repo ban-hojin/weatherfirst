@@ -1,0 +1,41 @@
+.app {
+  text-align: center;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231219/pngtree-pink-pastel-background-with-pink-aesthetic-sky-image_15522922.png');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif; /* This sets a nice, readable font for your app */
+}
+
+.weather-box {
+  width: 50%; /* Adjust the width as per your design preference */
+  margin: 20px auto; /* This ensures the box is centered */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for a soft look */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* A subtle shadow for some depth */
+  color: rgb(11, 11, 11); /* Text color set to white for contrast */
+  display: flex;
+  flex-direction: column; /* Stacks temperature and status vertically */
+  align-items: center; /* Aligns the content to the center */
+  justify-content: center; /* Distributes space evenly around the content */
+}
+
+.buttons button {
+  background-color: #87CEEB; /* A soft, sky-blue color for the buttons */
+  color: rgb(19, 18, 18);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for a hover effect */
+}
+
+.buttons button:hover {
+  background-color: #6495ED; /* A slightly darker shade on hover for a visual feedback */
+}
