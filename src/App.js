@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Ensure you have this line to import your CSS styles
-
+import './App.css'; 
 const App = () => {
   const [temperature, setTemperature] = useState('');
   const [status, setStatus] = useState('');
-  const apiKey = 'ad7fd7137385d57a1107e20e2bf02b2d'; // Your OpenWeatherMap API key
+  const apiKey = 'ad7fd7137385d57a1107e20e2bf02b2d';
 
   // A function to fetch weather data from the OpenWeatherMap API
   const getWeather = async (city) => {
@@ -13,7 +12,6 @@ const App = () => {
       const response = await fetch(url);
       const data = await response.json();
       if (response.ok) {
-        // Set the temperature and status with the data received from the API
         setTemperature(`${city}의 현재 온도: ${data.main.temp}°C`);
         setStatus(`상태: ${data.weather[0].description}`);
       } else {
